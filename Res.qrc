@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/Logos">
+        <file>Logos/about.png</file>
+        <file>Logos/List.png</file>
+        <file>Logos/Quit.png</file>
+        <file>Logos/Icon.png</file>
+        <file>Logos/SMTU.png</file>
+    </qresource>
+</RCC>

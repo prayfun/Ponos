@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>925</width>
+    <height>684</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ships Browser</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="CMyTextBrowser" name="ShipsList">
+      <property name="openLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>925</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Меню</string>
+    </property>
+    <addaction name="List"/>
+    <addaction name="About"/>
+    <addaction name="separator"/>
+    <addaction name="Quit"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="List">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/Logos/Logos/List.png</normaloff>:/Logos/Logos/List.png</iconset>
+   </property>
+   <property name="text">
+    <string>Оглавление</string>
+   </property>
+  </action>
+  <action name="About">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/Logos/Logos/about.png</normaloff>:/Logos/Logos/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="Quit">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/Logos/Logos/Quit.png</normaloff>:/Logos/Logos/Quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CMyTextBrowser</class>
+   <extends>QTextBrowser</extends>
+   <header location="global">CMyTextBrowser.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
